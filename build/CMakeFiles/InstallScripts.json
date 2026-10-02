@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/shiroha_pantsu/labroratry/mujoco/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

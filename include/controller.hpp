@@ -7,27 +7,29 @@
 #define _CONTROLLER_H_
 
 #include <Eigen/Core>
+#include <vector>
+#include <cmath>
 
 // 状态空间相关定义
 using Vector_x = Eigen::Matrix<double,8,1>; // 状态向量
 using Vector_u = Eigen::Matrix<double,2,1>; // 输入向量
 using Matrix_A = Eigen::Matrix<double,8,8>; // 状态转移矩阵
-using Matrix_B = Eigen::Matrix<double,2,8>; // 控制输入矩阵
+using Matrix_B = Eigen::Matrix<double,8,2>; // 控制输入矩阵
 using Matrix_Q = Eigen::Matrix<double,8,8>; // 状态代价矩阵
 using Matrix_R = Eigen::Matrix2d;           // 控制代价矩阵
-using Matrix_P = Eigen::Matrix2d;           // Riccati方程解
+using Matrix_P = Eigen::Matrix<double,8,8>; // Riccati方程解
 using Matrix_K = Eigen::Matrix<double,2,8>; // 状态反馈增益
 
 
 // 控制器基类
 class Controller {
 public:
-    virtual ~Controller() {}
+    virtual ~Controller();
 
     // 计算输入量
     virtual Vector_u computeControl(
         const Vector_x& x,
-        int frequency
+        double dt
     ) = 0;
 };
 
@@ -46,7 +48,7 @@ public:
 
     virtual Vector_u computeControl(
         const Vector_x& x,
-        int frequency
+        double dt
     ) override;
 
 };
@@ -54,13 +56,13 @@ public:
 // LQR 控制器
 class LQRcontroller : public Controller {
 private:
-
+    
 public:
     LQRcontroller();
 
     virtual Vector_u computeControl(
         const Vector_x& x,
-        int frequency
+        double dt
     ) override;
 };
 

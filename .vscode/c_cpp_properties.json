@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/shiroha_pantsu/miniconda3/envs/robot/lib/python3.12/site-packages/mujoco/**",
+                "/home/shiroha_pantsu/miniconda3/envs/robot/lib/python3.12/site-packages/mujoco/include",
                 "/usr/include/eigen3"
             ],
             "defines": [],
