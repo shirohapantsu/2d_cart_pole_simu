@@ -49,6 +49,7 @@ private:
 
 public:
     explicit Simulation(const std::string& model_path);
+    
     ~Simulation();
 
     // 为GLFW函数提供参数的方法

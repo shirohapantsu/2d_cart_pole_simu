@@ -24,7 +24,7 @@ using Matrix_K = Eigen::Matrix<double,2,8>; // 状态反馈增益
 // 控制器基类
 class Controller {
 public:
-    virtual ~Controller();
+    virtual ~Controller() {}
 
     // 计算输入量
     virtual Vector_u computeControl(
@@ -40,8 +40,11 @@ private:
     double ki_;
     double kd_;
 
-    double integret_;
-    double total_error_;
+    double integral_limit_;
+    double output_limit_;
+
+    std::vector<double> integral_;
+    std::vector<double> gyro_;
 
 public:
     PIDcontroller(double kp, double ki, double kd);
