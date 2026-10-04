@@ -4,9 +4,9 @@
 #define FRAME_RATE 60.0
 #define MODEL_PATH "cart_pole.xml"
 
-double KP = 0.0;
-double KI = 0.0;
-double KD = 0.0;
+double KP = 40.0;
+double KI = 10.0;
+double KD = 6.0;
 
 Matrix_Q Q = Matrix_Q::Zero();
 Matrix_R R = Matrix_R::Zero();

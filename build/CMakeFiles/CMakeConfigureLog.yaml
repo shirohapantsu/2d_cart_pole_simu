@@ -20,13 +20,14 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -36,27 +37,30 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     searched_directories:
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/uname"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/uname"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/uname"
       - "/home/shiroha_pantsu/.npm-global/bin/uname"
       - "/home/shiroha_pantsu/.qoder-cn/entry/uname"
       - "/home/shiroha_pantsu/.local/bin/uname"
       - "/home/shiroha_pantsu/miniconda3/bin/uname"
       - "/home/shiroha_pantsu/miniconda3/condabin/uname"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
       - "/usr/local/sbin/uname"
       - "/usr/local/bin/uname"
       - "/usr/sbin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -66,6 +70,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "message-v1"
     backtrace:
@@ -94,13 +99,14 @@ events:
       - "ninja"
       - "samu"
     candidate_directories:
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -110,7 +116,17 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     searched_directories:
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/ninja-build"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/ninja"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/samu"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/ninja-build"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/ninja"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/samu"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/ninja-build"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/ninja"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/samu"
       - "/home/shiroha_pantsu/.npm-global/bin/ninja-build"
       - "/home/shiroha_pantsu/.npm-global/bin/ninja"
       - "/home/shiroha_pantsu/.npm-global/bin/samu"
@@ -126,12 +142,6 @@ events:
       - "/home/shiroha_pantsu/miniconda3/condabin/ninja-build"
       - "/home/shiroha_pantsu/miniconda3/condabin/ninja"
       - "/home/shiroha_pantsu/miniconda3/condabin/samu"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja-build"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/ninja"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/samu"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja-build"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/ninja"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/samu"
       - "/usr/local/sbin/ninja-build"
       - "/usr/local/sbin/ninja"
       - "/usr/local/sbin/samu"
@@ -145,13 +155,14 @@ events:
     found: "/usr/bin/ninja"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -161,81 +172,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
-      - "CMakeLists.txt:3 (project)"
-    mode: "program"
-    variable: "CMAKE_CXX_COMPILER"
-    description: "CXX compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "c++"
-      - "CC"
-      - "g++"
-      - "aCC"
-      - "cl"
-      - "bcc"
-      - "xlC"
-      - "icpx"
-      - "icx"
-      - "clang++"
-    candidate_directories:
-      - "/home/shiroha_pantsu/.npm-global/bin/"
-      - "/home/shiroha_pantsu/.qoder-cn/entry/"
-      - "/home/shiroha_pantsu/.local/bin/"
-      - "/home/shiroha_pantsu/miniconda3/bin/"
-      - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-    searched_directories:
-      - "/home/shiroha_pantsu/.npm-global/bin/c++"
-      - "/home/shiroha_pantsu/.qoder-cn/entry/c++"
-      - "/home/shiroha_pantsu/.local/bin/c++"
-      - "/home/shiroha_pantsu/miniconda3/bin/c++"
-      - "/home/shiroha_pantsu/miniconda3/condabin/c++"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/c++"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/c++"
-      - "/usr/local/sbin/c++"
-      - "/usr/local/bin/c++"
-      - "/usr/sbin/c++"
-    found: "/usr/bin/c++"
-    search_context:
-      ENV{PATH}:
-        - "/home/shiroha_pantsu/.npm-global/bin"
-        - "/home/shiroha_pantsu/.qoder-cn/entry"
-        - "/home/shiroha_pantsu/.local/bin"
-        - "/home/shiroha_pantsu/miniconda3/bin"
-        - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -263,13 +200,14 @@ events:
     found: "/usr/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -279,6 +217,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "message-v1"
     backtrace:
@@ -288,7 +227,7 @@ events:
       - "CMakeLists.txt:3 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/c++ 
+      Compiler: /usr/bin/g++ 
       Build flags: 
       Id flags:  
       
@@ -322,13 +261,14 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -337,16 +277,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -356,6 +298,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -377,13 +320,14 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -392,16 +336,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -411,6 +357,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -432,13 +379,14 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -447,16 +395,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -466,6 +416,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -487,13 +438,14 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -502,16 +454,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -521,6 +475,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -542,13 +497,14 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -557,16 +513,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -576,6 +534,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -597,13 +556,14 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -612,16 +572,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -631,6 +593,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -652,13 +615,14 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -667,16 +631,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -686,6 +652,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -707,13 +674,14 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -722,16 +690,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -741,6 +711,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -762,13 +733,14 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -777,15 +749,17 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     searched_directories:
       - "/usr/bin/dlltool"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/dlltool"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/dlltool"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/dlltool"
       - "/home/shiroha_pantsu/.npm-global/bin/dlltool"
       - "/home/shiroha_pantsu/.qoder-cn/entry/dlltool"
       - "/home/shiroha_pantsu/.local/bin/dlltool"
       - "/home/shiroha_pantsu/miniconda3/bin/dlltool"
       - "/home/shiroha_pantsu/miniconda3/condabin/dlltool"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
       - "/usr/local/sbin/dlltool"
       - "/usr/local/bin/dlltool"
       - "/usr/sbin/dlltool"
@@ -794,16 +768,18 @@ events:
       - "/usr/games/dlltool"
       - "/usr/local/games/dlltool"
       - "/snap/bin/dlltool"
+      - "/usr/share/trae-cn/resources/app/bin/lib/dlltool"
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -813,6 +789,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -834,13 +811,14 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -849,16 +827,18 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -868,6 +848,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -889,13 +870,14 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -904,15 +886,17 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/tapi"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/tapi"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/tapi"
       - "/home/shiroha_pantsu/.npm-global/bin/tapi"
       - "/home/shiroha_pantsu/.qoder-cn/entry/tapi"
       - "/home/shiroha_pantsu/.local/bin/tapi"
       - "/home/shiroha_pantsu/miniconda3/bin/tapi"
       - "/home/shiroha_pantsu/miniconda3/condabin/tapi"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
       - "/usr/local/sbin/tapi"
       - "/usr/local/bin/tapi"
       - "/usr/sbin/tapi"
@@ -921,16 +905,18 @@ events:
       - "/usr/games/tapi"
       - "/usr/local/games/tapi"
       - "/snap/bin/tapi"
+      - "/usr/share/trae-cn/resources/app/bin/lib/tapi"
     found: false
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -940,6 +926,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -964,13 +951,14 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -979,15 +967,17 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     searched_directories:
       - "/usr/bin/gcc-ar-15.2"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/gcc-ar-15.2"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/gcc-ar-15.2"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/gcc-ar-15.2"
       - "/home/shiroha_pantsu/.npm-global/bin/gcc-ar-15.2"
       - "/home/shiroha_pantsu/.qoder-cn/entry/gcc-ar-15.2"
       - "/home/shiroha_pantsu/.local/bin/gcc-ar-15.2"
       - "/home/shiroha_pantsu/miniconda3/bin/gcc-ar-15.2"
       - "/home/shiroha_pantsu/miniconda3/condabin/gcc-ar-15.2"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-15.2"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-15.2"
       - "/usr/local/sbin/gcc-ar-15.2"
       - "/usr/local/bin/gcc-ar-15.2"
       - "/usr/sbin/gcc-ar-15.2"
@@ -996,16 +986,18 @@ events:
       - "/usr/games/gcc-ar-15.2"
       - "/usr/local/games/gcc-ar-15.2"
       - "/snap/bin/gcc-ar-15.2"
+      - "/usr/share/trae-cn/resources/app/bin/lib/gcc-ar-15.2"
     found: "/usr/bin/gcc-ar-15"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1015,6 +1007,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "find-v1"
     backtrace:
@@ -1039,13 +1032,14 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1054,15 +1048,17 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-15.2"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/gcc-ranlib-15.2"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/gcc-ranlib-15.2"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/gcc-ranlib-15.2"
       - "/home/shiroha_pantsu/.npm-global/bin/gcc-ranlib-15.2"
       - "/home/shiroha_pantsu/.qoder-cn/entry/gcc-ranlib-15.2"
       - "/home/shiroha_pantsu/.local/bin/gcc-ranlib-15.2"
       - "/home/shiroha_pantsu/miniconda3/bin/gcc-ranlib-15.2"
       - "/home/shiroha_pantsu/miniconda3/condabin/gcc-ranlib-15.2"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-15.2"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-15.2"
       - "/usr/local/sbin/gcc-ranlib-15.2"
       - "/usr/local/bin/gcc-ranlib-15.2"
       - "/usr/sbin/gcc-ranlib-15.2"
@@ -1071,16 +1067,18 @@ events:
       - "/usr/games/gcc-ranlib-15.2"
       - "/usr/local/games/gcc-ranlib-15.2"
       - "/snap/bin/gcc-ranlib-15.2"
+      - "/usr/share/trae-cn/resources/app/bin/lib/gcc-ranlib-15.2"
     found: "/usr/bin/gcc-ranlib-15"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1090,6 +1088,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1099,8 +1098,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-M8Q5s4"
-      binary: "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-M8Q5s4"
+      source: "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-CRzUUD"
+      binary: "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-CRzUUD"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1110,12 +1109,12 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-M8Q5s4'
+        Change Dir: '/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-CRzUUD'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_63a04
-        [1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/ninja -v cmTC_e36e8
+        [1/2] /usr/bin/g++   -v -o CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
+        COLLECT_GCC=/usr/bin/g++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
         OFFLOAD_TARGET_DEFAULT=1
         Target: x86_64-linux-gnu
@@ -1123,8 +1122,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_63a04.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_63a04.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cczs8eLo.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e36e8.dir/'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e36e8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccvS9Jcr.s
         GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
         	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
         
@@ -1145,15 +1144,15 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: b661a74662ad7cf413c4193391ab5290
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_63a04.dir/'
-         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o /tmp/cczs8eLo.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e36e8.dir/'
+         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccvS9Jcr.s
         GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.'
-        [2/2] : && /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_63a04   && :
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /usr/bin/g++  -v -Wl,-v CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e36e8   && :
         Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
+        COLLECT_GCC=/usr/bin/g++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
         OFFLOAD_TARGET_DEFAULT=1
@@ -1164,12 +1163,12 @@ events:
         gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63a04' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_63a04.'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrDv0gL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_63a04 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e36e8' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e36e8.'
+         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccS1VoQO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e36e8 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         collect2 version 15.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrDv0gL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_63a04 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccS1VoQO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e36e8 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63a04' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_63a04.'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e36e8' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e36e8.'
         
       exitCode: 0
   -
@@ -1210,12 +1209,12 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-M8Q5s4']
+        ignore line: [Change Dir: '/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-CRzUUD']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_63a04]
-        ignore line: [[1/2] /usr/bin/c++   -v -o CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_e36e8]
+        ignore line: [[1/2] /usr/bin/g++   -v -o CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
         ignore line: [OFFLOAD_TARGET_DEFAULT=1]
         ignore line: [Target: x86_64-linux-gnu]
@@ -1223,8 +1222,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_63a04.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_63a04.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/cczs8eLo.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e36e8.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_e36e8.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccvS9Jcr.s]
         ignore line: [GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
         ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
         ignore line: []
@@ -1245,15 +1244,15 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b661a74662ad7cf413c4193391ab5290]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_63a04.dir/']
-        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o /tmp/cczs8eLo.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e36e8.dir/']
+        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccvS9Jcr.s]
         ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [[2/2] : && /usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_63a04   && :]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /usr/bin/g++  -v -Wl -v CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_e36e8   && :]
         ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
         ignore line: [OFFLOAD_TARGET_DEFAULT=1]
@@ -1264,13 +1263,13 @@ events:
         ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_63a04' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_63a04.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrDv0gL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_63a04 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_e36e8' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_e36e8.']
+        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccS1VoQO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e36e8 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccrDv0gL.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccS1VoQO.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -1288,7 +1287,7 @@ events:
           arg [-znow] ==> ignore
           arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_63a04] ==> ignore
+          arg [cmTC_e36e8] ==> ignore
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
@@ -1303,7 +1302,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1314,7 +1313,7 @@ events:
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrDv0gL.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_63a04 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_63a04.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/ccS1VoQO.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e36e8 /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_e36e8.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
         collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
@@ -1364,13 +1363,14 @@ events:
       - "mujoco/mujoco.h"
     candidate_directories:
       - "/home/shiroha_pantsu/miniconda3/envs/robot/lib/python3.12/site-packages/mujoco/include/"
+      - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current/"
+      - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current/"
       - "/home/shiroha_pantsu/.npm-global/bin/"
       - "/home/shiroha_pantsu/.qoder-cn/entry/"
       - "/home/shiroha_pantsu/.local/bin/"
       - "/home/shiroha_pantsu/miniconda3/bin/"
       - "/home/shiroha_pantsu/miniconda3/condabin/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
       - "/usr/local/sbin/"
       - "/usr/local/bin/"
       - "/usr/sbin/"
@@ -1380,6 +1380,7 @@ events:
       - "/usr/games/"
       - "/usr/local/games/"
       - "/snap/bin/"
+      - "/usr/share/trae-cn/resources/app/bin/lib/"
       - "/usr/local/include/x86_64-linux-gnu/"
       - "/usr/local/include/"
       - "/usr/local/"
@@ -1401,13 +1402,14 @@ events:
     found: "/home/shiroha_pantsu/miniconda3/envs/robot/lib/python3.12/site-packages/mujoco/include/"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1417,6 +1419,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1443,8 +1446,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-nwdRBI"
-      binary: "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-nwdRBI"
+      source: "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-kV2b6X"
+      binary: "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-kV2b6X"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1453,11 +1456,11 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-nwdRBI'
+        Change Dir: '/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-kV2b6X'
         
-        Run Build Command(s): /usr/bin/ninja -v cmTC_e30b6
-        [1/2] /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -o CMakeFiles/cmTC_e30b6.dir/src.cxx.o -c /home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-nwdRBI/src.cxx
-        [2/2] : && /usr/bin/c++   CMakeFiles/cmTC_e30b6.dir/src.cxx.o -o cmTC_e30b6   && :
+        Run Build Command(s): /usr/bin/ninja -v cmTC_86794
+        [1/2] /usr/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=c++17 -o CMakeFiles/cmTC_86794.dir/src.cxx.o -c /home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/CMakeScratch/TryCompile-kV2b6X/src.cxx
+        [2/2] : && /usr/bin/g++   CMakeFiles/cmTC_86794.dir/src.cxx.o -o cmTC_86794   && :
         
       exitCode: 0
   -
@@ -1544,22 +1547,6 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/glfw3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/glfw3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/usr/local/glfw3Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1581,13 +1568,14 @@ events:
       version: "3.4.0"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1597,6 +1585,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -1691,22 +1680,6 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Eigen3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/eigen3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Eigen3Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/eigen3-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/usr/local/Eigen3Config.cmake"
         mode: "config"
         reason: "no_exist"
@@ -1736,13 +1709,14 @@ events:
       version: "3.4.0"
     search_context:
       ENV{PATH}:
+        - "/home/shiroha_pantsu/.trae-cn/tools/trae-gopls/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/workspaces/265636cf/versions/node/current"
+        - "/home/shiroha_pantsu/.trae-cn/sdks/versions/node/current"
         - "/home/shiroha_pantsu/.npm-global/bin"
         - "/home/shiroha_pantsu/.qoder-cn/entry"
         - "/home/shiroha_pantsu/.local/bin"
         - "/home/shiroha_pantsu/miniconda3/bin"
         - "/home/shiroha_pantsu/miniconda3/condabin"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/shiroha_pantsu/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
         - "/usr/local/sbin"
         - "/usr/local/bin"
         - "/usr/sbin"
@@ -1752,6 +1726,7 @@ events:
         - "/usr/games"
         - "/usr/local/games"
         - "/snap/bin"
+        - "/usr/share/trae-cn/resources/app/bin/lib"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"

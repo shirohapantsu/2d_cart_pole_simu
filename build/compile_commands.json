@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/shiroha_pantsu/labroratry/mujoco/build",
+  "command": "/usr/bin/g++ -I/home/shiroha_pantsu/labroratry/mujoco/include -isystem /usr/include/eigen3 -g -std=c++17 -o CMakeFiles/controller.dir/src/controller.cpp.o -c /home/shiroha_pantsu/labroratry/mujoco/src/controller.cpp",
+  "file": "/home/shiroha_pantsu/labroratry/mujoco/src/controller.cpp",
+  "output": "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/controller.dir/src/controller.cpp.o"
+},
+{
+  "directory": "/home/shiroha_pantsu/labroratry/mujoco/build",
+  "command": "/usr/bin/g++ -I/home/shiroha_pantsu/labroratry/mujoco/include -isystem /usr/include/eigen3 -isystem /home/shiroha_pantsu/miniconda3/envs/robot/lib/python3.12/site-packages/mujoco/include -g -std=c++17 -o CMakeFiles/simulation.dir/src/simulation.cpp.o -c /home/shiroha_pantsu/labroratry/mujoco/src/simulation.cpp",
+  "file": "/home/shiroha_pantsu/labroratry/mujoco/src/simulation.cpp",
+  "output": "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/simulation.dir/src/simulation.cpp.o"
+},
+{
+  "directory": "/home/shiroha_pantsu/labroratry/mujoco/build",
+  "command": "/usr/bin/g++ -I/home/shiroha_pantsu/labroratry/mujoco/include -isystem /usr/include/eigen3 -isystem /home/shiroha_pantsu/miniconda3/envs/robot/lib/python3.12/site-packages/mujoco/include -g -std=c++17 -o CMakeFiles/simu_cartPole.dir/src/main.cpp.o -c /home/shiroha_pantsu/labroratry/mujoco/src/main.cpp",
+  "file": "/home/shiroha_pantsu/labroratry/mujoco/src/main.cpp",
+  "output": "/home/shiroha_pantsu/labroratry/mujoco/build/CMakeFiles/simu_cartPole.dir/src/main.cpp.o"
+}
+]

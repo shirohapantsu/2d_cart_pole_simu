@@ -1,7 +1,7 @@
 # ninja log v7
 1	780	1791130286774188111	CMakeFiles/simulation.dir/src/simulation.cpp.o	5c074837a36d7a5a
-782	1597	1791130287556518051	CMakeFiles/simu_cartPole.dir/src/main.cpp.o	3297c82d700ffa57
+1	943	1791130974556170784	CMakeFiles/simu_cartPole.dir/src/main.cpp.o	3297c82d700ffa57
 0	7796	1791130286773188108	CMakeFiles/controller.dir/src/controller.cpp.o	710ffb898cedc1e1
 7796	8056	1791130294569210582	libcontroller.a	7bfd7162252f599d
 8056	8069	1791130294829211331	libsimulation.a	73c4b639c64976c
-8069	8453	1791130294843149377	/home/shiroha_pantsu/labroratry/mujoco/simu_cartPole	7d3568e434859346
+943	1403	1791130975498636166	/home/shiroha_pantsu/labroratry/mujoco/simu_cartPole	7d3568e434859346

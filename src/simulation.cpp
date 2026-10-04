@@ -48,7 +48,6 @@ Simulation::Simulation(const std::string& model_path) {
     glfwSetMouseButtonCallback(window, mouse_button);
     glfwSetScrollCallback(window, scroll);
 
-    // 从两个方向各倾斜 5 度的状态开始，便于验证平衡控制。
     mj_resetDataKeyframe(model_, data_, initial_keyframe_);
     mj_forward(model_, data_);
 }

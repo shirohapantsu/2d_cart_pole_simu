@@ -305,12 +305,13 @@
     <!-- upright：小车在 XY 原点，摆杆精确直立，两个推力均为零。 -->
     <key name="upright" qpos="0 0 0 0" ctrl="0 0"/>
     <!--
-      initial_tilt：alpha、beta 两个关节角均为 +5 度，朝 +X、+Y 倾倒。
-      每个关节角为 5*pi/180，约 0.0872664626 rad；总倾角约 7.07 度。
+      initial_tilt：小车位于 (-2, -2) m，偏离零坐标，便于观察恢复过程。
+      alpha、beta 两个关节角均为 +25 度，朝 +X、+Y 倾倒。
+      每个关节角为 25*pi/180，约 0.4363323130 rad；总倾角约 34.8 度。
       C++ 用 mj_resetDataKeyframe(m, d, 1)，Python 同名函数选索引 1。
       恢复后调用 mj_forward 更新几何位置和传感器。
     -->
-    <key name="initial_tilt" qpos="0 0 0.0872664626 0.0872664626" ctrl="0 0"/>
+    <key name="initial_tilt" qpos="-2 -2 0.4363323130 0.4363323130" ctrl="0 0"/>
     <!-- tilt_x：绕 +Y 轴转 5 度，杆向 +X 倾斜；其余参数含义同上。 -->
     <key name="tilt_x" qpos="0 0 0.0872664626 0" ctrl="0 0"/>
     <!-- tilt_y：绕 -X 轴转 5 度，杆向 +Y 倾斜；其余参数含义同上。 -->
