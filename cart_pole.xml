@@ -2,27 +2,28 @@
 <!--
   水平二维移动小车 + 空间倒立摆。
   世界坐标：X、Y 是水平面内两个方向，Z 竖直向上。
-  小车可沿 X、Y 独立平移；球铰让摆杆向任意水平方向倾倒。
+  小车可沿 X、Y 独立平移；两个相交的铰链组成万向铰，允许杆向两个方向倾倒。
   SI 单位：长度 m，质量 kg，时间 s，力 N，角速度 rad/s。
 
-  球铰有三个转动自由度：两个倾倒方向，以及绕杆轴的自转。
-  因此共有 5 个物理自由度，而非平面模型的 2 个：
-    小车 X 平移 + 小车 Y 平移 + 摆杆三个转动。
-  姿态用单位四元数表示，避免用欧拉角表示完整空间转动时的奇异性。
-  model.nq=6，model.nv=5，model.nu=2。
-  data.qpos = [x, y, qw, qx, qy, qz]，四元数顺序为 w、x、y、z。
-  data.qvel = [vx, vy, 球铰局部角速度的三个分量]。
-  球铰局部角速度不能直接当作世界坐标中的角速度。
+  共有 4 个物理自由度：小车 X 平移、小车 Y 平移、摆杆两个倾倒角。
+  杆的姿态完全由这两个倾倒角决定，没有第三个独立的杆轴自转角。
+  两个倾倒关节分别绕 +Y、随动的 -X 轴，不设置绕 Z 或绕杆轴的第三个关节。
+  model.nq=4，model.nv=4，model.nu=2，不再使用球铰或四元数关节状态。
+  data.qpos = [x, y, alpha, beta]。
+  data.qvel = [vx, vy, alpha_dot, beta_dot]。
+  alpha：第一个关节角，正值使杆向 +X 倾倒。
+  beta：第二个关节角，直立附近正值使杆向 +Y 倾倒。
+  alpha_dot、beta_dot 是精确的关节角速度，不是世界角速度的三个分量。
   data.ctrl = [Fx, Fy]：两个小车水平推力，均以 N 为单位。
 
   简化假设：小车是理想 XY 移动平台，保持固定高度和姿态；没有车轮。
-  摆杆为均匀刚性圆柱，长度 1 m、质量 0.1 kg，质心距球铰 0.5 m。
+  摆杆为均匀刚性圆柱，长度 1 m、质量 0.1 kg，质心距双铰中心 0.5 m。
   不模拟碰撞、关节摩擦或阻尼；地面仅用于显示，杆倒下时可以穿过地面。
   本文件的 sensor 输出理想测量；真实采样、噪声、量化、延迟需在采样层处理。
 -->
 
 <!-- mujoco 是 MJCF 根元素；model 是模型名称，方便在查看器中识别。 -->
-<mujoco model="xy_cart_spatial_pole">
+<mujoco model="xy_cart_two_tilt_pole">
   <!--
     compiler：XML 编译设置。
     angle="radian"：XML 中按此设置解释的角度使用弧度。
@@ -169,37 +170,48 @@
       <geom name="cart_geom" type="box" size="0.20 0.20 0.06" mass="1.0"
             rgba="0.15 0.45 0.85 1"/>
       <!--
-        site：显示球铰位置的标记，不是有质量的刚体，也不会增加惯量。
+        site：显示双铰交点的标记，不是有质量的刚体，也不会增加惯量。
         name：名称；type="sphere"：球形；pos：相对小车原点的位置。
         size：球的半径；rgba：浅色、不透明。
-        该位置与下面 pole 的原点重合，即球铰中心。
+        该位置与下面 pole 的原点重合，即两个倾倒关节的共同中心。
       -->
       <site name="pivot_marker" type="sphere" pos="0 0 0.08" size="0.025"
             rgba="0.95 0.95 0.95 1"/>
 
       <!--
         pole：摆杆刚体，作为 cart 的子刚体随小车一起平移。
-        name：刚体名称；pos：相对于小车坐标系，球铰在中心上方 0.08 m。
-        初始球铰世界高度为 0.12 + 0.08 = 0.20 m。
+        name：刚体名称；pos：相对于小车坐标系，双铰在中心上方 0.08 m。
+        初始双铰中心的世界高度为 0.12 + 0.08 = 0.20 m。
       -->
       <body name="pole" pos="0 0 0.08">
         <!--
-          name="pole_ball"：球铰名称；type="ball"：三个转动自由度。
-          pos="0 0 0"：转动中心位于摆杆坐标系原点。
-          limited="false"：不限制球铰转角，杆可向任意方向倾倒和转动。
-          球铰不使用 axis，因为它没有单一固定转轴。
-          姿态占 qpos[2:6]，单位四元数 [qw, qx, qy, qz]。
-          [1, 0, 0, 0] 对应初始姿态：杆沿世界 +Z 竖直向上。
-          速度占 qvel[2:5]，是球铰的三个局部角速度分量。
-          球铰没有执行器，杆仅通过重力和小车运动间接驱动。
+          第一个倾倒关节：name="pole_tilt_x"；type="hinge"：一个转动自由度。
+          pos="0 0 0"：转轴经过摆杆原点；axis="0 1 0"：绕 +Y 轴。
+          正角 alpha 使杆向 +X 倾倒，alpha=0 对应该关节未偏转。
+          limited="false"：无角度限位，实际倾角由动力学和控制器决定。
+          此关节占 qpos[2]、qvel[2]，单位分别为 rad、rad/s。
+          两个倾倒关节均无执行器，杆通过重力和小车运动间接驱动。
         -->
-        <joint name="pole_ball" type="ball" pos="0 0 0" limited="false"/>
+        <joint name="pole_tilt_x" type="hinge" pos="0 0 0"
+               axis="0 1 0" limited="false"/>
+        <!--
+          第二个倾倒关节：name="pole_tilt_y"；type="hinge"：一个转动自由度。
+          pos="0 0 0"：与第一个转轴相交；axis="-1 0 0"：参考姿态的 -X 轴。
+          同一刚体上的多个关节按声明顺序施加变换，因此该轴随第一个关节倾倒。
+          正角 beta 在直立附近使杆向 +Y 倾倒，两个正角共同产生对角方向倾倒。
+          limited="false"：无角度限位；此关节占 qpos[3]、qvel[3]。
+          姿态矩阵 R=Ry(alpha)*Rx(-beta)，没有第三个独立的偏航或杆轴自转关节。
+          杆方向 n=[sin(alpha)*cos(beta), sin(beta), cos(alpha)*cos(beta)]。
+          两方向同时运动时仍有几何耦合，世界角速度 wz 不一定为零。
+        -->
+        <joint name="pole_tilt_y" type="hinge" pos="0 0 0"
+               axis="-1 0 0" limited="false"/>
         <!--
           均匀圆柱摆杆，圆柱轴线默认沿摆杆局部 Z 轴。
           name：名称；type="cylinder"：圆柱。
-          pos="0 0 0.5"：圆柱中心，即质心，距球铰 0.5 m。
+          pos="0 0 0.5"：圆柱中心，即质心，距双铰中心 0.5 m。
           size="0.02 0.5"：半径 0.02 m、半长 0.5 m，所以全长为 1 m。
-          下端位于局部 z=0 的球铰，上端位于局部 z=1。
+          下端位于局部 z=0 的双铰中心，上端位于局部 z=1。
           mass="0.1"：总质量 0.1 kg；rgba：橙色、不透明。
           这是均匀杆，不是无质量杆加杆顶集中质量的模型。
         -->
@@ -253,50 +265,55 @@
     <!-- jointvel：cart_y 的速度，sensordata[3]=vy，单位 m/s。 -->
     <jointvel name="cart_velocity_y" joint="cart_y"/>
     <!--
-      ballquat：球铰姿态四元数，只用于 ball 关节。
-      name：名称；joint：球铰名称；sensordata[4:8]=[qw, qx, qy, qz]。
-      小车姿态固定，所以此相对于小车的姿态也就是相对于世界的姿态。
-      一个四元数的四个分量不是四个独立角度，必须满足单位长度。
+      两个关节角和角速度替换原来的四个四元数分量。
+      name：传感器名称；joint：所测量的倾倒关节。
+      sensordata[4]=alpha、[5]=beta，单位 rad。
+      sensordata[6]=alpha_dot、[7]=beta_dot，单位 rad/s。
+      前 8 项现在直接组成 [x, y, vx, vy, alpha, beta, alpha_dot, beta_dot]。
+      这些是双铰关节角；它们与两个平面投影倾角在直立附近近似一致。
     -->
-    <ballquat name="pole_orientation" joint="pole_ball"/>
+    <jointpos name="pole_angle_x" joint="pole_tilt_x"/>
+    <jointpos name="pole_angle_y" joint="pole_tilt_y"/>
+    <jointvel name="pole_angle_velocity_x" joint="pole_tilt_x"/>
+    <jointvel name="pole_angle_velocity_y" joint="pole_tilt_y"/>
     <!--
       framezaxis：读取指定坐标系 Z 轴在世界中的单位方向向量。
       name：名称；objtype="xbody"：使用刚体坐标系，而非惯性主轴坐标系。
       objname="pole"：摆杆刚体；输出 sensordata[8:11]=[nx, ny, nz]。
-      杆沿局部 Z，因此该向量就是从球铰指向杆顶的方向。
+      杆沿局部 Z，因此该向量就是从双铰中心指向杆顶的方向。
       [0, 0, 1] 表示直立；nx>0 向 +X 倾倒，ny>0 向 +Y 倾倒。
-      此向量不受绕杆自身轴线的自转影响，适合观察两个倾倒方向。
+      杆方向传感器仍占 [8:11]，保留现有 get_state() 使用的索引。
     -->
     <framezaxis name="pole_direction" objtype="xbody" objname="pole"/>
     <!--
       frameangvel：指定坐标系的世界角速度。
       name：名称；objtype="xbody"、objname="pole"：摆杆刚体坐标系。
       输出 sensordata[11:14]=[wx, wy, wz]，单位 rad/s，表达在世界坐标系。
-      与球铰 qvel 的局部角速度表达方式不同，不应直接混用。
+      保留现有 get_state() 使用的索引；世界角速度与两个关节角速度不是同一组量。
+      本模型 wx=-cos(alpha)*beta_dot，wy=alpha_dot，wz=sin(alpha)*beta_dot。
     -->
     <frameangvel name="pole_world_angular_velocity" objtype="xbody" objname="pole"/>
   </sensor>
 
   <!--
     keyframe：保存初始状态；不会在加载时自动选择某一关键帧。
-    key 的 name 是状态名称；qpos 按 [x, y, qw, qx, qy, qz] 排列。
+    key 的 name 是状态名称；qpos 按 [x, y, alpha, beta] 排列。
     ctrl 按 [Fx, Fy] 排列，单位 N；未写 qvel，恢复时全部速度为零。
-    普通加载或 mj_resetData 默认使用 [0, 0, 1, 0, 0, 0]，即精确直立。
+    普通加载或 mj_resetData 默认使用 [0, 0, 0, 0]，即精确直立。
   -->
   <keyframe>
     <!-- upright：小车在 XY 原点，摆杆精确直立，两个推力均为零。 -->
-    <key name="upright" qpos="0 0 1 0 0 0" ctrl="0 0"/>
+    <key name="upright" qpos="0 0 0 0" ctrl="0 0"/>
     <!--
-      initial_tilt：绕水平轴 (-1, 1, 0)/sqrt(2) 转 5 度，杆朝 +X、+Y 的对角方向倾斜。
-      四元数计算：[cos(a/2), 轴向量*sin(a/2)]，其中 a=5*pi/180。
+      initial_tilt：alpha、beta 两个关节角均为 +5 度，朝 +X、+Y 倾倒。
+      每个关节角为 5*pi/180，约 0.0872664626 rad；总倾角约 7.07 度。
       C++ 用 mj_resetDataKeyframe(m, d, 1)，Python 同名函数选索引 1。
       恢复后调用 mj_forward 更新几何位置和传感器。
     -->
-    <key name="initial_tilt" qpos="0 0 0.9990482216 -0.0308435646 0.0308435646 0"
-         ctrl="0 0"/>
+    <key name="initial_tilt" qpos="0 0 0.0872664626 0.0872664626" ctrl="0 0"/>
     <!-- tilt_x：绕 +Y 轴转 5 度，杆向 +X 倾斜；其余参数含义同上。 -->
-    <key name="tilt_x" qpos="0 0 0.9990482216 0 0.0436193874 0" ctrl="0 0"/>
+    <key name="tilt_x" qpos="0 0 0.0872664626 0" ctrl="0 0"/>
     <!-- tilt_y：绕 -X 轴转 5 度，杆向 +Y 倾斜；其余参数含义同上。 -->
-    <key name="tilt_y" qpos="0 0 0.9990482216 -0.0436193874 0 0" ctrl="0 0"/>
+    <key name="tilt_y" qpos="0 0 0 0.0872664626" ctrl="0 0"/>
   </keyframe>
 </mujoco>

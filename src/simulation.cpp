@@ -8,6 +8,14 @@ Simulation::Simulation(const std::string& model_path) {
     if (!model_)
         throw std::string("load model error") + errors;
 
+    // 按名称查找，避免 XML 中关键帧顺序变化后选错初始状态。
+    initial_keyframe_ = mj_name2id(model_, mjOBJ_KEY, "initial_tilt");
+    if (initial_keyframe_ < 0) {
+        mj_deleteModel(model_);
+        model_ = nullptr;
+        throw std::runtime_error("model is missing initial_tilt keyframe");
+    }
+
     data_ = mj_makeData(model_);
 
     // 初始化 GLFW
@@ -40,8 +48,8 @@ Simulation::Simulation(const std::string& model_path) {
     glfwSetMouseButtonCallback(window, mouse_button);
     glfwSetScrollCallback(window, scroll);
 
-    // 重置仿真状态，准备开始仿真
-    mj_resetData(model_, data_);
+    // 从两个方向各倾斜 5 度的状态开始，便于验证平衡控制。
+    mj_resetDataKeyframe(model_, data_, initial_keyframe_);
     mj_forward(model_, data_);
 }
 
@@ -68,6 +76,21 @@ ViewerParams Simulation::viewerParams() {
             button_middle, button_right, lastx, lasty};
 }
 
+void Simulation::request_reset() {
+    reset_requested_ = true;
+}
+
+bool Simulation::reset_if_requested() {
+    if (!reset_requested_) {
+        return false;
+    }
+
+    reset_requested_ = false;
+    mj_resetDataKeyframe(model_, data_, initial_keyframe_);
+    mj_forward(model_, data_);
+    return true;
+}
+
 // 返回data->time
 double Simulation::get_time() {
     return data_->time;
@@ -77,15 +100,11 @@ double Simulation::get_time() {
 Vector_x Simulation::get_state() {
     mj_forward(model_ ,data_);
 
-    std::vector<double> n = {data_->sensordata[8], data_->sensordata[9], data_->sensordata[10]};
-    double theta_x = atan2(n[0], n[2]);
-    double theta_y = atan2(n[1], n[2]);
-
     Vector_x x;
-    x << data_->sensordata[0] , data_->sensordata[1]  ,
-         data_->sensordata[2] , data_->sensordata[3]  ,
-         theta_x              , theta_y               ,
-         data_->sensordata[12], -data_->sensordata[11];
+    x << data_->sensordata[0] , data_->sensordata[1],
+         data_->sensordata[2] , data_->sensordata[3],
+         data_->sensordata[4] , data_->sensordata[5],
+         data_->sensordata[6] , data_->sensordata[7];
 
     return x;
 }
@@ -118,6 +137,11 @@ void Simulation::refresh_scene() {
     glfwPollEvents();
 }
 
+// 窗口关闭标记
+bool Simulation::close_window() {
+    return glfwWindowShouldClose(window);
+}
+
 
 /****************************************************************/
 /****************************************************************/
@@ -126,12 +150,10 @@ void Simulation::refresh_scene() {
 // GLFW 事件函数
 void keyboard(GLFWwindow* window, int key, int scancode, int act, int mods) {
     auto* sim = static_cast<Simulation*>(glfwGetWindowUserPointer(window));
-    auto params = sim->viewerParams();
 
-    // backspace: reset simulation
+    // Backspace：由主循环统一处理，确保控制器和调度状态同步重置。
     if (act == GLFW_PRESS && key == GLFW_KEY_BACKSPACE) {
-        mj_resetData(params.model, params.data);
-        mj_forward(params.model, params.data);
+        sim->request_reset();
     }
 }
 

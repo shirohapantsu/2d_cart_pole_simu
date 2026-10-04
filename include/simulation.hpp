@@ -30,6 +30,12 @@ private:
     mjModel* model_ = nullptr;
     mjData* data_ = nullptr;
 
+    // 启动和重置均恢复到 initial_tilt 关键帧。
+    int initial_keyframe_ = -1;
+
+    // 键盘回调提交请求，主循环统一重置仿真和控制器
+    bool reset_requested_ = false;
+
     // viewer资源
     GLFWwindow* window = nullptr;
     mjvCamera cam_;
@@ -55,6 +61,12 @@ public:
     // 为GLFW函数提供参数的方法
     ViewerParams viewerParams();
 
+    // 提交重置请求
+    void request_reset();
+
+    // 处理待执行的重置，返回本次是否进行了重置。
+    bool reset_if_requested();
+
     // 返回data->time
     double get_time();
 
@@ -69,6 +81,9 @@ public:
 
     // 刷新画面
     void refresh_scene();
+
+    // 窗口关闭标记
+    bool close_window();
 };
 
 // GLFW 事件函数
